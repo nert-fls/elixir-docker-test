@@ -23,4 +23,6 @@ RUN mix deps.get && mix deps.compile && mix compile
 
 RUN chmod +x entrypoint.sh
 
+RUN entrypoint.sh
+
 EXPOSE 4000
