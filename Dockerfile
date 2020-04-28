@@ -13,8 +13,8 @@ RUN mix local.rebar --force
 COPY . /example
 WORKDIR /example
 
-COPY --from=react /ui/build/static ./priv/static
-COPY --from=react /ui/build/asset-manifest.json ./priv/static/asset-manifest.json
+# COPY --from=react /ui/build/static ./priv/static
+# COPY --from=react /ui/build/asset-manifest.json ./priv/static/asset-manifest.json
 
 RUN apt-get update
 RUN apt-get install make gcc libc-dev
