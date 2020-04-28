@@ -25,6 +25,6 @@ RUN chmod +x entrypoint.sh
 
 WORKDIR /
 
-RUN ./entrypoint.sh
+RUN sh ./entrypoint.sh
 
 EXPOSE 4000
