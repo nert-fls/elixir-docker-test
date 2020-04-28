@@ -23,6 +23,6 @@ RUN mix deps.get && mix deps.compile && mix compile
 
 RUN chmod +x entrypoint.sh
 
-RUN /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
 
 EXPOSE 4000
